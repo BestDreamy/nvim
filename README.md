@@ -18,3 +18,5 @@ sudo mkfontscale # 生成核心字体信息
 sudo mkfontdir # 生成字体文件夹
 sudo fc-cache -fv # 刷新系统字体缓存
 ```
+
+最后，修改终端字体即可，将 custom font 更改为 Nerd Font
