@@ -27,6 +27,10 @@ keymap.set("n", "<C-h>", "<C-w>h", { desc = "Go to left window", remap = true })
 keymap.set("n", "<C-j>", "<C-w>j", { desc = "Go to lower window", remap = true })
 keymap.set("n", "<C-k>", "<C-w>k", { desc = "Go to upper window", remap = true })
 keymap.set("n", "<C-l>", "<C-w>l", { desc = "Go to right window", remap = true })
+keymap.set("n", "<C-left>", "<C-w>h", { desc = "Go to left window", remap = true })
+keymap.set("n", "<C-down>", "<C-w>j", { desc = "Go to lower window", remap = true })
+keymap.set("n", "<C-up>", "<C-w>k", { desc = "Go to upper window", remap = true })
+keymap.set("n", "<C-right>", "<C-w>l", { desc = "Go to right window", remap = true })
 
 -- lazy
 keymap.set("n", "<leader>l", "<cmd>Lazy<cr>")
@@ -36,3 +40,15 @@ keymap.set("n", "<leader>m", "<cmd>Mason<cr>")
 
 -- new file
 keymap.set("n", "<leader>fn", "<cmd>enew<cr>", { desc = "New File" })
+
+-- tab(bufferline)
+keymap.set("n", "<tab><right>", "<cmd>BufferLineCycleNext<cr>")
+keymap.set("n", "<tab><left>", "<cmd>BufferLineCyclePrev<cr>")
+keymap.set("n", "<tab>q", "<cmd>bdelete %<cr>")
+
+-- run
+keymap.set("n", "<F5>", "<cmd>lua run()<cr>")
+
+-- forbid capslock
+keymap.set("n", "W", "<cmd>w<cr>")
+keymap.set("n", "Q", "<cmd>q<cr>")
