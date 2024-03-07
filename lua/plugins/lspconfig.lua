@@ -6,6 +6,8 @@ return{
         local lspconfig = require('lspconfig')
         -- clangd(c, c++)
         lspconfig.clangd.setup{}
+        -- verilog
+        lspconfig.hdl_checker.setup{}
         -- lua
         lspconfig.lua_ls.setup {
             on_init = function(client)
@@ -38,6 +40,8 @@ return{
                 Lua = {}
             }
         }
+        -- python
+        -- require'lspconfig'.pyright.setup{}
     end,
 
     -- Global mappings.
