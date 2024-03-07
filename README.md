@@ -42,6 +42,12 @@ sudo fc-cache -fv # 刷新系统字体缓存
 需要检查新的语言语法时，需要更新 lspconfig.lua 文件
 对应语言配置查看： https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#vhdl_ls
 
+
+# Usage
+":LspInfo": List current file's language server.
+
+
+
 #### 参考：
 https://github.com/ye-junzhe/BetterNvim
 
