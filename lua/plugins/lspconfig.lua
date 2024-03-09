@@ -7,7 +7,7 @@ return{
         -- clangd(c, c++)
         lspconfig.clangd.setup{}
         -- verilog
-        lspconfig.hdl_checker.setup{}
+        lspconfig.verible.setup{}
         -- lua
         lspconfig.lua_ls.setup {
             on_init = function(client)

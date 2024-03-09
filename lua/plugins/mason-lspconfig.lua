@@ -6,7 +6,7 @@ return {
             ensure_installed = {
                 "lua_ls",
                 "clangd",
-                "hdl_checker"
+                "verible"
             },
         })
     end,
