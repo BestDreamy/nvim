@@ -55,5 +55,9 @@ function run()
     elseif vim.bo.filetype == 'verilog' then
         split()
         vim.cmd('term iverilog "%" -o "%<"')
+    elseif vim.bo.filetype == 'c' then
+        split()
+        vim.cmd('term gcc "%" -o "%<" && ./"%<"')
+    elseif vim.bo.filetype == 'python' then
     end
 end

@@ -44,11 +44,11 @@ keymap.set("n", "<leader>fn", "<cmd>enew<cr>", { desc = "New File" })
 -- tab(bufferline)
 keymap.set("n", "<tab><right>", "<cmd>BufferLineCycleNext<cr>")
 keymap.set("n", "<tab><left>", "<cmd>BufferLineCyclePrev<cr>")
-keymap.set("n", "<tab>q", "<cmd>bdelete %<cr>")
+keymap.set("n", "Q", "<cmd>bdelete %<cr>")
 
 -- run
 keymap.set("n", "<F5>", "<cmd>lua run()<cr>")
 
 -- forbid capslock
 keymap.set("n", "W", "<cmd>w<cr>")
-keymap.set("n", "Q", "<cmd>q<cr>")
+-- keymap.set("n", "Q", "<cmd>q<cr>")
