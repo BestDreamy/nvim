@@ -52,4 +52,4 @@ keymap.set("n", "<F5>", "<cmd>lua run()<cr>")
 -- forbid capslock
 keymap.set("n", "W", "<cmd>w<cr>")
 -- keymap.set("n", "Q", "<cmd>q<cr>")
-keymap.set("n", "<cmd>Q<cr>", "<cmd>q<cr>")
+vim.cmd([[cnoreabbrev Q q]])
